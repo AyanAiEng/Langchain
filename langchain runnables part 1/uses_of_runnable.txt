@@ -1,0 +1,28 @@
+FILE: Uses of Runnable in LangChain
+
+1.  Building Pipelines
+
+-   Combine prompt, LLM, and output parser easily
+
+2.  Parallel Execution
+
+-   Run multiple tasks at same time using RunnableParallel
+
+3.  Conditional Logic
+
+-   Use RunnableBranch for if-else flows
+
+4.  Custom Functions
+
+-   Use RunnableLambda to add Python logic
+
+5.  Error Handling
+
+-   Use fallback runnables for backup models
+
+6.  Memory Integration
+
+-   Maintain chat history using RunnableWithMessageHistory
+
+CONCLUSION: Runnables are the backbone of modern LangChain applications
+and allow flexible AI workflow design.

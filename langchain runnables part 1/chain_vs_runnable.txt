@@ -1,0 +1,14 @@
+FILE: Difference Between Chain and Runnable in LangChain
+
+CHAIN (Old Approach) - Predefined workflow structure - Less flexible -
+Hard to customize steps - Example: LLMChain, SimpleSequentialChain
+
+RUNNABLE (Modern Approach) - Everything is a composable unit - Highly
+flexible and modular - Supports: - parallel execution - branching
+logic - streaming - Example: prompt | llm | parser
+
+KEY DIFFERENCE: - Chain = fixed structure - Runnable = building blocks
+you can combine freely
+
+CONCLUSION: Runnables replaced chains because they are more powerful,
+flexible, and scalable.

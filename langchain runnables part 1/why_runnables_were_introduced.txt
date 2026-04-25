@@ -1,0 +1,55 @@
+
+FILE: Why Runnables Were Introduced in LangChain
+
+BACKGROUND:
+Before Runnables, LangChain used "Chains" (like LLMChain, SimpleSequentialChain).
+
+PROBLEMS DEVELOPERS FACED:
+
+1. Rigid Structure
+- Chains were fixed and not flexible
+- Hard to modify or extend steps
+
+2. Poor Composability
+- Combining multiple chains was difficult
+- No clean way to mix parallel + sequential logic
+
+3. Inconsistent Interfaces
+- Different chain types behaved differently
+- Hard to standardize usage
+
+4. Hard to Add Conditional Logic
+- If-else flows required complex custom code
+- No native branching support
+
+5. No Clean Parallel Execution
+- Running multiple tasks at once was complicated
+
+6. Debugging Difficulty
+- Hard to inspect intermediate outputs
+- Not transparent pipeline flow
+
+7. Limited Streaming Support
+- Real-time token streaming was not consistent
+
+8. Tool + Memory Integration Issues
+- Agents, tools, and memory systems were not unified
+
+SOLUTION: RUNNABLES
+
+LangChain introduced Runnables to solve all these problems by:
+
+- Making everything a composable building block
+- Allowing:
+  → Sequential flow (RunnableSequence or |)
+  → Parallel execution (RunnableParallel)
+  → Conditional logic (RunnableBranch)
+  → Custom logic (RunnableLambda)
+  → Fallback handling
+  → Streaming support
+
+KEY IDEA:
+"Everything is a Runnable → Everything can be connected"
+
+CONCLUSION:
+Runnables were introduced to replace rigid Chains with a flexible, modular, and production-ready system for building AI applications.
